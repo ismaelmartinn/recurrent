@@ -14,8 +14,15 @@ export default function HeaderAuth() {
             <Link to="/about">Sobre nosotros</Link>
           </li>
           <li>
-            <Link to="/dashboard">Dashboard</Link>
+            <Link to="/dashboard">Características</Link>
           </li>
+          <li>
+            <Link to="/dashboard">Cómo funciona</Link>
+          </li>
+          <li>
+            <Link to="/dashboard">Precios</Link>
+          </li>
+
         </ul>
       </nav>
       <div className="header__acount flex gap-4">

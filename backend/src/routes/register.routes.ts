@@ -3,6 +3,9 @@ import type { Request, Response } from "express";
 const router: Router = Router();
 import bcrypt from "bcrypt";
 import { prisma } from "../lib/prisma.js";
+import "dotenv/config";
+import { generateToken } from "../services/token.service.js";
+
 const saltRounds = 10;
 
 // Endpoint para crear usuario
@@ -20,6 +23,16 @@ router.post("/", async (req: Request, res: Response) => {
         name,
         passwordHash: passwordHash,
       },
+    });
+
+    let token = generateToken({ userId: createdUser.id });
+
+    res.cookie("recurrent", token, {
+      httpOnly: true,
+      secure: false,
+      sameSite: "lax",
+      path: "/",
+      maxAge: 7 * 24 * 60 * 60 * 1000,
     });
     res.status(201).json({
       message: "Usuario creado correctamente",

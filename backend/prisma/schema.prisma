@@ -29,6 +29,7 @@ model Subscriptions {
   descripcion   String?
   precio        Decimal       
   tipo          String
+  categoria     String
   activo        Boolean       @default(true)
   User          User          @relation(fields: [userId], references: [id])
   userId        Int

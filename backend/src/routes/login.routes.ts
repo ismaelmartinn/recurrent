@@ -3,9 +3,11 @@ import type { Request, Response } from "express";
 const router: Router = Router();
 import bcrypt from "bcrypt";
 import { prisma } from "../lib/prisma.js";
+import { generateToken } from "../services/token.service.js";
+import jwt from "jsonwebtoken";
 
 // Endpoint para logear usuario
-router.post("/", async (req: Request, res: Response) => {
+router.post("/login", async (req: Request, res: Response) => {
   try {
     const { email, password } = req.body;
 
@@ -19,21 +21,40 @@ router.post("/", async (req: Request, res: Response) => {
       where: {
         email: email,
       },
+      select: {
+        id: true,
+        username: true,
+        email: true,
+        name: false,
+        passwordHash: true,
+        isDemo: true,
+      },
     });
 
     if (!user) {
       return res.status(401).json({ error: "El usuario no existe" });
     }
 
-    const comparedPasswords = await bcrypt.compare(
-      password,
-      user.passwordHash,
-    );
+    const returnUser = {
+      id: user.id,
+      username: user.username,
+      email: user.email,
+      isDemo: user.isDemo,
+    };
+
+    const comparedPasswords = await bcrypt.compare(password, user.passwordHash);
 
     if (comparedPasswords) {
-      res.status(200).json({
-        message: "Inicio de sesión correcto",
+      let token = generateToken({ userId: user.id });
+
+      res.cookie("recurrent", token, {
+        httpOnly: true,
+        secure: false,
+        sameSite: "lax",
+        path: "/",
+        maxAge: 7 * 24 * 60 * 60 * 1000,
       });
+      res.status(200).json(returnUser);
     } else {
       return res.status(401).json({ error: "La contraseña no coincide" });
     }
@@ -41,6 +62,16 @@ router.post("/", async (req: Request, res: Response) => {
     console.error(error);
     res.status(500).json({ error: "Error al acceder el usuario" });
   }
+});
+
+router.post("/logout", (req: Request, res: Response) => {
+  res.clearCookie("recurrent", {
+    httpOnly: true,
+    secure: false,
+    sameSite: "lax",
+  });
+
+  return res.status(200).json({ message: "Sesión cerrada" });
 });
 
 export default router;
