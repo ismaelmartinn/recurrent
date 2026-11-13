@@ -1,6 +1,8 @@
-import { useUser } from "../../store";
+import { useUserActions } from "../../store";
+import { useNavigate } from "react-router";
 export default function Login() {
-  const { addUser } = useUser((state) => state.actions);
+  let navigate = useNavigate();
+  const { setUser } = useUserActions();
   async function handleLogin(event: any) {
     event.preventDefault();
     const email = event.target.email.value;
@@ -15,8 +17,8 @@ export default function Login() {
       });
       const result = await response.json();
       if (response.status == 200) {
-        addUser(result);
-        window.location.href = "/";
+        setUser(result);
+        navigate("/");
       }
     } catch (error) {
       console.error("Error:", error);

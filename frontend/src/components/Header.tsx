@@ -1,10 +1,15 @@
 import { Link } from "react-router";
-import { useUser } from "../store";
+import { useUserActions, useUser, useUserLoading } from "../store";
+import { useNavigate } from "react-router";
 
 export default function Header() {
-  const user = useUser((state) => state.user);
-  const { logout } = useUser((state) => state.actions);
+  const { logout } = useUserActions();
+  let navigate = useNavigate();
+  const loading = useUserLoading();
+  const user = useUser();
 
+  if (loading) return <span>Cargando...</span>;
+  // if (!user) return navigate("/auth/login"); añadir a la ruta dashboard
   async function handleLogout() {
     try {
       const response = await fetch("http://localhost:3000/auth/logout", {
@@ -18,26 +23,22 @@ export default function Header() {
 
       if (response.status == 200) {
         logout();
-        window.location.href = "/";
+        navigate("/");
       }
     } catch (error) {
       console.error(error);
     }
   }
-  console.log(user);
 
   return (
-    <header className="flex justify-between items-center px-20 py-2 border-b border-b-[#737373f2] bg-zinc-200">
-      <div className="header__brand">
-        <span>Recurrent</span>
-      </div>
-      <nav>
+    <header className="flex justify-around items-center  py-2 border-b border-b-[#737373f2] bg-zinc-200">
+      <nav className="flex gap-10">
+        <div className="header__brand">
+          <span>Recurrent</span>
+        </div>
         <ul className="flex flex-row gap-8">
           <li>
             <Link to="/">Inicio</Link>
-          </li>
-          <li>
-            <Link to="/about">Sobre nosotros</Link>
           </li>
           <li>
             <Link to="/dashboard">Características</Link>

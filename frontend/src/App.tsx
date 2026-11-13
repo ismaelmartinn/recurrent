@@ -4,8 +4,14 @@ import About from "./pages/About";
 import Login from "./pages/auth/Login";
 import Register from "./pages/auth/Register";
 import DasboardHome from "./pages/dashboard/DasboardHome";
+import { useUserActions } from "./store";
+import { useEffect } from "react";
 
 function App() {
+  const { checkAuth } = useUserActions();
+  useEffect(() => {
+    checkAuth();
+  }, [checkAuth]);
   return (
     <Routes>
       <Route index element={<Home />} />

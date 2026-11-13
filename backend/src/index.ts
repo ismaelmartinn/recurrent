@@ -26,11 +26,6 @@ app.get("/", (req, res) => {
   res.status(200).json({ mensaje: "Backend de recurrent en funcionamiento" });
 });
 
-app.use("/test-auth", authProtection, (req, res) => {
-  console.log("Middleware ejecutado correctamente");
-  res.json({ message: "Autenticación correcta" });
-});
-
 app.listen(port, () => {
   console.log("El servidor esta funcionando en el puerto", port);
   console.log(`La url http://127.0.0.1:${port}`);

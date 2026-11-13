@@ -44,6 +44,9 @@ router.get("/", async (req: Request, res: Response) => {
         isDemo: true,
       },
     });
+    if (!user) {
+      return res.status(404).json({ error: "Usuario no encontrado" });
+    }
     res.status(200).json(user);
   } catch (error) {
     if (error instanceof jwt.TokenExpiredError) {

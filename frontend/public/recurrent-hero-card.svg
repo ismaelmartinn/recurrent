@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="484" viewBox="0 0 560 484" font-family="Inter, ui-sans-serif, system-ui, sans-serif">
+<defs><filter id="sh" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="1" stdDeviation="1" flood-color="#000" flood-opacity="0.04"/><feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000" flood-opacity="0.06"/></filter></defs>
+<g transform="translate(20 14)">
+<rect x="0.5" y="0.5" width="519" height="435" rx="16" fill="#fff" stroke="#e4e4e7" filter="url(#sh)"/>
+<text x="24" y="38" font-size="13" fill="#5c5c63">Gasto de noviembre</text>
+<text x="496" y="38" font-size="13" fill="#5c5c63" text-anchor="end">12 suscripciones</text>
+<text x="24" y="86" font-size="40" font-weight="600" letter-spacing="-1.2" fill="#101010">47,96 €</text>
+<text x="170" y="86" font-size="16" fill="#8e8e96">/ mes · 575,52 € al año</text>
+<rect x="24.00" y="116" width="12.83" height="30" rx="4" fill="#ececee"/>
+<rect x="39.83" y="116" width="12.83" height="30" rx="4" fill="#ececee"/>
+<rect x="55.67" y="116" width="12.83" height="30" rx="4" fill="#ececee"/>
+<circle cx="62.08" cy="138" r="3" fill="#8e8e96"/>
+<rect x="71.50" y="116" width="12.83" height="30" rx="4" fill="#ececee"/>
+<rect x="87.33" y="116" width="12.83" height="30" rx="4" fill="#ececee"/>
+<rect x="103.17" y="116" width="12.83" height="30" rx="4" fill="#ececee"/>
+<rect x="119.00" y="116" width="12.83" height="30" rx="4" fill="#ececee"/>
+<circle cx="125.42" cy="138" r="3" fill="#8e8e96"/>
+<rect x="134.83" y="116" width="12.83" height="30" rx="4" fill="#ececee"/>
+<rect x="150.67" y="116" width="12.83" height="30" rx="4" fill="#ececee"/>
+<circle cx="157.08" cy="138" r="3" fill="#8e8e96"/>
+<rect x="166.50" y="116" width="12.83" height="30" rx="4" fill="#ececee"/>
+<rect x="182.33" y="116" width="12.83" height="30" rx="4" fill="#ececee"/>
+<rect x="198.92" y="116.75" width="11.33" height="28.5" rx="4" fill="#fff" stroke="#101010" stroke-width="1.5"/>
+<rect x="214.00" y="116" width="12.83" height="30" rx="4" fill="#f4f4f5"/>
+<rect x="229.83" y="116" width="12.83" height="30" rx="4" fill="#f4f4f5"/>
+<rect x="245.67" y="116" width="12.83" height="30" rx="4" fill="#f4f4f5"/>
+<circle cx="252.08" cy="138" r="3" fill="#0b7348"/>
+<rect x="261.50" y="116" width="12.83" height="30" rx="4" fill="#f4f4f5"/>
+<rect x="277.33" y="116" width="12.83" height="30" rx="4" fill="#f4f4f5"/>
+<rect x="293.17" y="116" width="12.83" height="30" rx="4" fill="#f4f4f5"/>
+<rect x="309.00" y="116" width="12.83" height="30" rx="4" fill="#f4f4f5"/>
+<rect x="324.83" y="116" width="12.83" height="30" rx="4" fill="#f4f4f5"/>
+<rect x="340.67" y="116" width="12.83" height="30" rx="4" fill="#f4f4f5"/>
+<circle cx="347.08" cy="138" r="3" fill="#0b7348"/>
+<rect x="356.50" y="116" width="12.83" height="30" rx="4" fill="#f4f4f5"/>
+<rect x="372.33" y="116" width="12.83" height="30" rx="4" fill="#f4f4f5"/>
+<rect x="388.17" y="116" width="12.83" height="30" rx="4" fill="#f4f4f5"/>
+<rect x="404.00" y="116" width="12.83" height="30" rx="4" fill="#f4f4f5"/>
+<rect x="419.83" y="116" width="12.83" height="30" rx="4" fill="#f4f4f5"/>
+<circle cx="426.25" cy="138" r="3" fill="#0b7348"/>
+<rect x="435.67" y="116" width="12.83" height="30" rx="4" fill="#f4f4f5"/>
+<rect x="451.50" y="116" width="12.83" height="30" rx="4" fill="#f4f4f5"/>
+<circle cx="457.92" cy="138" r="3" fill="#0b7348"/>
+<rect x="467.33" y="116" width="12.83" height="30" rx="4" fill="#f4f4f5"/>
+<rect x="483.17" y="116" width="12.83" height="30" rx="4" fill="#f4f4f5"/>
+<text x="24" y="162" font-size="11" fill="#8e8e96">1 nov</text>
+<text x="204.6" y="162" font-size="11" fill="#8e8e96" text-anchor="middle">Hoy, 12</text>
+<text x="496" y="162" font-size="11" fill="#8e8e96" text-anchor="end">30 nov</text>
+<line x1="0.5" x2="519.5" y1="186.5" y2="186.5" stroke="#e4e4e7"/>
+<rect x="24" y="207" width="36" height="36" rx="9" fill="#f4f4f5"/>
+<text x="42" y="230" font-size="14" font-weight="600" fill="#5c5c63" text-anchor="middle">S</text>
+<text x="72" y="223" font-size="14" font-weight="600" fill="#101010">Spotify Premium</text>
+<text x="72" y="241" font-size="12.5" fill="#8e8e96">15 nov</text>
+<rect x="118.5" y="229.5" width="58" height="17" rx="8.5" fill="#fdf2e4" stroke="#f2c99a"/>
+<text x="147.5" y="241.5" font-size="11.5" font-weight="600" fill="#b45309" text-anchor="middle">En 3 días</text>
+<text x="496" y="231" font-size="14" font-weight="600" fill="#101010" text-anchor="end">10,99 €</text>
+<line x1="16" x2="504" y1="254.5" y2="254.5" stroke="#f0f0f2"/>
+<rect x="24" y="265" width="36" height="36" rx="9" fill="#f4f4f5"/>
+<text x="42" y="288" font-size="14" font-weight="600" fill="#5c5c63" text-anchor="middle">N</text>
+<text x="72" y="281" font-size="14" font-weight="600" fill="#101010">Netflix Estándar</text>
+<text x="72" y="299" font-size="12.5" fill="#8e8e96">21 nov</text>
+<text x="496" y="289" font-size="14" font-weight="600" fill="#101010" text-anchor="end">13,99 €</text>
+<line x1="16" x2="504" y1="312.5" y2="312.5" stroke="#f0f0f2"/>
+<rect x="24" y="323" width="36" height="36" rx="9" fill="#f4f4f5"/>
+<text x="42" y="346" font-size="14" font-weight="600" fill="#5c5c63" text-anchor="middle">A</text>
+<text x="72" y="339" font-size="14" font-weight="600" fill="#101010">Adobe Lightroom</text>
+<text x="72" y="357" font-size="12.5" fill="#8e8e96">26 nov</text>
+<rect x="118.5" y="345.5" width="86" height="17" rx="8.5" fill="#fdeced" stroke="#f4b8ba"/>
+<text x="161.5" y="357.5" font-size="11.5" font-weight="600" fill="#e5484d" text-anchor="middle">Sube a 13,99 €</text>
+<text x="496" y="347" font-size="14" font-weight="600" fill="#101010" text-anchor="end">11,99 €</text>
+<line x1="16" x2="504" y1="370.5" y2="370.5" stroke="#f0f0f2"/>
+<rect x="24" y="381" width="36" height="36" rx="9" fill="#f4f4f5"/>
+<text x="42" y="404" font-size="14" font-weight="600" fill="#5c5c63" text-anchor="middle">i</text>
+<text x="72" y="397" font-size="14" font-weight="600" fill="#101010">iCloud+ 200 GB</text>
+<text x="72" y="415" font-size="12.5" fill="#8e8e96">28 nov</text>
+<text x="496" y="405" font-size="14" font-weight="600" fill="#101010" text-anchor="end">2,99 €</text>
+</g></svg>
